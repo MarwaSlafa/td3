@@ -11,12 +11,9 @@ public class segment {
 		this.A=A;
 	    this.B=B;
 }
-  public double distance()
-    {
-        double d;
-        d = Math.sqrt((B.getAbscisse()-A.getAbscisse())*(B.getAbscisse()-A.getAbscisse()) +(B.getOrdonée()-A.getOrdonée())*(B.getOrdonée()-A.getOrdonée()));
-        return d;
-    }
+  public double distance() {
+          return   Math.sqrt((B.getAbscisse()-A.getAbscisse())*(B.getAbscisse()-A.getAbscisse()) +(B.getOrdonée()-A.getOrdonée())*(B.getOrdonée()-A.getOrdonée()));
+       }
   public  segment Symetrie(){
     	return new segment(A.Symetrie(),B.Symetrie());
     }
